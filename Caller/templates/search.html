@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block breadcrumb %}
+  <li class="breadcrumb-item active">Callers</li>
+{% endblock %}
+
+{% block content %}
+  <table class="table">
+    <thead class="table-dark thead">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Spam</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for userdetail in data %}
+        <tr>
+          <td>
+            {{ userdetail.name }}
+          </td>
+          <td class="align-middle"> {{ userdetail.email }}</td>
+          <td class="align-middle">{{ userdetail.phone}}</td>
+           <td class="align-middle">
+               {{userdetail.spam}}
+            </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
