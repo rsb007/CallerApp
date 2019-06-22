@@ -15,7 +15,7 @@ login - http://127.0.0.1:8000/login/
 signin - http://127.0.0.1:8000/signup/
 search - http://127.0.0.1:8000/search/?name=c 
 	 http://127.0.0.1:8000/search/?name=c&number=2&spam=False
-	 http://127.0.0.1:8000/search/?name=c&spam=Flase
+	 http://127.0.0.1:8000/search/?name=c&spam=False
 spam-
  	http://127.0.0.1:8000/spam/5476023841/ 
 
